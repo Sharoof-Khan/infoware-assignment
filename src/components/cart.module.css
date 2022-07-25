@@ -1,0 +1,28 @@
+.container{
+    position: fixed;
+        top: 100px;
+         
+        /* top:-1000px; */
+}
+
+.container h1{
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #0091EA;
+    margin-left: 5%;
+    margin-left: 85%;
+}
+
+.cart{
+    width: 21rem;
+        /* border: 1px solid black; */
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    
+        min-height: 23rem;
+    
+        /* margin-left: 70%; */
+        margin-left: 1000px;
+    
+        
+
+}

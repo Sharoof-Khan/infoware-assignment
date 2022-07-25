@@ -1,0 +1,172 @@
+
+{
+  "products":[
+
+    
+  
+  {
+    "id": 1,
+    "title": "Paneer Paratha Pizza",
+    "description": "An epic fusion of paratha and pizza with melting cheese & soft paneer fillings to satisfy all your indulgent",
+    "image": "https://i.postimg.cc/GtG3m9Jc/Paneer-Paratha-Pizza.webp",
+    "categories": "https://m.dominos.co.in/images/veg.svg",
+    "price":209,
+    "size": "Medium",
+    "crust" :"100% Wheat Thin Crust",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 2,
+    "title": "Chicken Keema Paratha Pizza",
+    "description": "Flavourful & meaty chicken keema paratha and goodness of cheesy pizza coming together in an epic",
+    "image": "https://i.postimg.cc/28N8XFr3/Chicken-Dominator-Combo.webp",
+    "categories": "https://m.dominos.co.in/images/non_veg.svg",
+    "price":249,
+    "size": "Medium",
+    "crust" :"100% Wheat Thin Crust",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 3,
+    "title": "Margherita",
+    "description": "Classic delight with 100% real mozzarella, basil and extra virgin olive oil",
+    "image": "https://images.dominos.co.in/new_margherita_2502.jpg",
+    "categories": "https://m.dominos.co.in/images/veg.svg",
+    "price":239,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 4,
+    "title": "Farmhouse",
+    "description": "Delightful combination of onion, capsicum, tomato & grilled mushroom",
+    "image": "https://images.dominos.co.in/farmhouse.png",
+    "categories": "https://m.dominos.co.in/images/veg.svg",
+    "price":459,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 5,
+    "title": "Pepper Barbecue Chicken",
+    "description": "Pepper barbecue chicken for that extra zing",
+    "image": "https://images.dominos.co.in/new_pepper_barbeque_chicken.jpg",
+    "categories": "https://m.dominos.co.in/images/non_veg.svg",
+    "price":449,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 6,
+    "title": "Chicken Sausage",
+    "description": "American classic! Spicy, herbed chicken sausage on pizza",
+    "image": "https://images.dominos.co.in/new_chicken_sausage.jpg",
+    "categories": "https://m.dominos.co.in/images/non_veg.svg",
+    "price":369,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 7,
+    "title": "Chicken Sausage",
+    "description": "American classic! Spicy, herbed chicken sausage on pizza",
+    "image": "https://images.dominos.co.in/new_chicken_sausage.jpg",
+    "categories": "https://m.dominos.co.in/images/non_veg.svg",
+    "price":369,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 8,
+    "title": "The Unthinkable Pizza",
+    "description": "Loaded with Plant Based Protein topping along with Black Olives & Red Paprika enjoy this unique 100%",
+    "image": "https://i.postimg.cc/bwzYqyGh/The-Unthinkable-Pizza.webp",
+    "categories": "https://m.dominos.co.in/images/veg.svg",
+    "price":369,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 9,
+    "title": "Meal for 4: Indi Tandoori Paneer & Peppy Paneer Combo",
+    "description": "Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi",
+    "image": "https://i.postimg.cc/2jZSwXpP/indi-tandoori-paneer-and-peppy-panner-combo.webp",
+    "categories": "https://m.dominos.co.in/images/veg.svg",
+    "price":1090,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 10,
+    "title": "Meal for 4: Chicken Dominator Combo",
+    "description": "Large Chicken Dominator + 2 Garlic Bread + 2 Pepsi",
+    "image": "https://i.postimg.cc/28N8XFr3/Chicken-Dominator-Combo.webp",
+    "categories": "https://m.dominos.co.in/images/non_veg.svg",
+    "price":1051,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 11,
+    "title": "Value Combo: 2 Garlic Breads",
+    "description": "Value Combo: 2 Garlic Breads @ 99 Each",
+    "image": "https://i.postimg.cc/G2ZhRvD7/Value-Combo-2-Garlic-Breads.webp",
+    "categories": "https://m.dominos.co.in/images/non_veg.svg",
+    "price":198,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 12,
+    "title": "Value Combo: 1 Regular Margherita and 1 Garlic Bread",
+    "description": "Value Combo: 1 Regular Margherita and 1 Garlic Bread @ 99 Each",
+    "image": "https://i.postimg.cc/RF3V2gWJ/Value-Combo-1-Regular-Margherita-and-1-Garlic-Bread.webp",
+    "categories": "https://m.dominos.co.in/images/non_veg.svg",
+    "price":198,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    },
+  {
+    "id": 13,
+    "title": "Red Velvet Lava Cake",
+    "description": "A truly indulgent experience with sweet and rich red velvet cake on a creamy cheese flavoured base to",
+    "image": "https://i.postimg.cc/jj3S8pSr/Red-Valvet-Lava-Cake.webp",
+    "categories": "https://m.dominos.co.in/images/non_veg.svg",
+    "price":139,
+    "size": "Medium",
+    "crust" :"New Hand Tossed",
+    "is_favorite":false
+   
+    }
+    
+  
+  
+  
+
+
+  ],
+  "cart":[]
+  
+}
