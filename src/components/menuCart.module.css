@@ -28,7 +28,7 @@
 
 .top>:nth-child(2){
     position: absolute;
-    top: 12vh;
+    top: 10vh;
     left: 1vw;
     font-size: 1.5rem;
     color: white;
@@ -48,6 +48,7 @@
 
 .mid{
 border-bottom: 1px solid #BDBDBD;
+min-height: 25vh;
 }
 
 .mid>:first-child{
@@ -139,7 +140,6 @@ border-bottom: 1px solid #BDBDBD;
 
 .addToCart{
     /* margin-right: 20px; */
-    position: sticky;
     margin-top: 10px;
     margin-left: 15vw;
     height: 30px;
@@ -151,6 +151,26 @@ border-bottom: 1px solid #BDBDBD;
     margin-bottom: 10px;
 }
 .addToCart:hover{
-    background-color: green;
+    background-color: green ;
     color: white;
+    /* z-index: 2; */
+}
+
+
+@media screen and (max-width:600px){
+    .addToCart{
+        width: 90%;
+        /* margin-left: 20px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
+    .addToCart:hover{
+        background-color: green;
+        color: white;
+    }
+    
 }

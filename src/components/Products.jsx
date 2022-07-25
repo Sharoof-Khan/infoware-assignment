@@ -6,16 +6,21 @@ import Style from './products.module.css'
 
 const Products = () => {
 
-    const pc = 'https://images.dominos.co.in/new_chicken_sausage.jpg'
-    const category = 'https://m.dominos.co.in/images/non_veg.svg'
+    // const pc = 'https://images.dominos.co.in/new_chicken_sausage.jpg'
+    // const category = 'https://m.dominos.co.in/images/non_veg.svg'
 
-    const [data, setData] = useState()
+    const [data, setData] = useState([])
     
     useEffect(() => {
-        fetch('http://localhost:4000/products')
+        // fetch('http://localhost:4000/products')
+        fetch('https://infoware-assignment.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
+
+    if (data.length === 0) { 
+        return <h1>Loading...</h1>
+    }
 
   return (
       <div className={Style.container}>
@@ -37,7 +42,7 @@ const Products = () => {
                     description={item.description}
                     size={item.size}
                     crust={item.crust}
-                    category={category}
+                    category={item.categories}
                 />
             
            })}

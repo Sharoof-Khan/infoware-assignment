@@ -7,7 +7,7 @@ import Style from './homePage.module.css'
 const HomePage = () => {
   return (
       <div>
-          <Navbar />
+          {/* <Navbar /> */}
           <Products />
 
           <Cart  />
