@@ -41,7 +41,7 @@
     margin-top: -35px;
    
 
-    /* filter: invert(1); */
+    filter: invert(1);
     /* background-color: blue; */
 }
 
@@ -73,4 +73,51 @@
             margin-right: -50px;
         }
 }
+
+
+@media screen and (max-width: 400px) {
+    .cart>img{
+        height: 3vh;
+        margin-top: -30px;
+    }
+
+    .logo >p{
+        /* margin-top: 3%; */
+        margin-top: 5px;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+        .cart>span {
+            margin-top: -35px;
+            color: white;
+            /* margin-left: 95%; */
+            margin-right: -50px;
+        }
+}
+    
+
+@media screen and (min-width:600px) and ( max-width: 800px) {
+    .cart>img{
+        height: 3vh;
+        margin-top:-30px;
+    }
+
+    .logo >p{
+        /* margin-top: 3%; */
+        margin-top: 5px;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+        .cart>span {
+            margin-top: -35px;
+            color: white;
+            /* margin-left: 95%; */
+            margin-right: -50px;
+        }
+}
+    
+
+
     
