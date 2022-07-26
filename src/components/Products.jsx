@@ -8,10 +8,6 @@ import { fetchData } from '../redux/cart/action'
 
 const Products = () => {
 
-    // const pc = 'https://images.dominos.co.in/new_chicken_sausage.jpg'
-    // const category = 'https://m.dominos.co.in/images/non_veg.svg'
-
-    // const [data, setData] = useState([])
 
     const dispatch = useDispatch()
     const products = useSelector(state => state.dominoProduct.products)
