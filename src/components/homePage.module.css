@@ -2,3 +2,12 @@
     margin-left: 60%;
     margin-top: vh;
 }
+
+
+
+@media screen and (max-width: 600px) {
+   .homePage>:nth-child(2){
+         display: none;
+   }
+    
+}

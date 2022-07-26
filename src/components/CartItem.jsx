@@ -11,7 +11,7 @@ const CartItem = ({ item,handleRemoveFromCart }) => {
     
     const dispatch = useDispatch();
      const cartItems = useSelector(state => state.dominoProduct.cartItems)
-    console.log('cartItems:', cartItems)
+    // console.log('cartItems:', cartItems)
 
      useEffect(() => {
         let items = 0;
@@ -28,14 +28,9 @@ const CartItem = ({ item,handleRemoveFromCart }) => {
 
 const handleAddQty = () => {
     // setQty(e.target.value)
-    console.log('addQtyBefore Add:', addQty);
+    // console.log('addQtyBefore Add:', addQty);
     setAddQty(addQty + 1)
-    console.log('addQtyAfter Add:', addQty);
-
-    // const action = { id: item.id, quantity: addQty + 1 } 
-    // console.log(action,'increment');
-    
-    // dispatch(changeQuantity())
+    // console.log('addQtyAfter Add:', addQty);
     
     
     

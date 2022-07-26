@@ -6,7 +6,7 @@ import Style from './homePage.module.css'
 
 const HomePage = () => {
   return (
-      <div>
+      <div className={Style.homePage}>
           {/* <Navbar /> */}
           <Products />
 

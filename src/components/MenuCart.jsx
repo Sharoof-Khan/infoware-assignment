@@ -16,7 +16,7 @@ const MenuCart = ({ pic, price, title, description, size, crust, category,id }) 
 
         const action = addTocart(item)
 
-        console.log(action,'addToCart');
+        // console.log(action,'addToCart');
         dispatch(action)
          
     }

@@ -33,7 +33,7 @@
 .cart{
     display: flex;
     flex-flow: row-reverse;
-    /* display: none; */
+    display: none;
 }
 
 .cart>img{

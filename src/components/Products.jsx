@@ -15,7 +15,7 @@ const Products = () => {
 
     const dispatch = useDispatch()
     const products = useSelector(state => state.dominoProduct.products)
-    console.log('products:', products)
+    // console.log('products:', products)
     const loading = useSelector(state => state.dominoProduct.loading)
     
 
@@ -26,12 +26,6 @@ const Products = () => {
         }
     }, [dispatch, products?.length])
 
-
-    console.log('products:', products);
-
-    // const handleAddToCart = (product) => {
-    //     console.log('productAtToCart:', product);
-    // }
    
 
     if (loading) {
@@ -40,16 +34,7 @@ const Products = () => {
         
         return (
             <div className={Style.container}>
-                {/* <MenuCart
-              pic={pc}
-              price={500}
-              title={'Chicken Sausage'}
-              description={'Veg delight - onion, capsicum, grilled mushroom, corn & paneer'}
-              size={'Medium'}
-              crust="New Hand Tossed"
-              category={category}
-          /> */}
-
+   
                 {products && products.map(item => {
                     return <MenuCart
                         key={item.id}

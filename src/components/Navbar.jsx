@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 const Navbar = () => {
 
     const cartItems = useSelector(state => state.dominoProduct.cartItems)
-    console.log('cartItemsCountInNavbar:', cartItems.length)
+    // console.log('cartItemsCountInNavbar:', cartItems.length)
     const [cartCount, setCartCount] = useState(0)
     
     useEffect(() => {

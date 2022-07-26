@@ -35,23 +35,23 @@ const Cart = () => {
 
 
     
-    // if (cart.length === 0) {
-    //     // return <h1>Loading...</h1>
-    //     return (
-    //         <div className={Style.cartContainer}>
-    //             <div className={Style.cart}>
-    //                 <div className={Style.emptyCart}>
+    if (cartItems.length === 0) {
+        // return <h1>Loading...</h1>
+        return (
+            <div className={Style.cartContainer}>
+                <div className={Style.cart}>
+                    <div className={Style.emptyCart}>
 
-    //                 <img src="https://api.dominos.co.in/prod-olo-api/static/assets/cart_empty.png" alt="Cart Logo" />
-    //                 <p>Your cart is empty</p>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     )
-    // }
+                    <img src="https://api.dominos.co.in/prod-olo-api/static/assets/cart_empty.png" alt="Cart Logo" />
+                    <p>Your cart is empty</p>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
     const handleRemoveFromCart = (id) => {
-        console.log('id:', id)
+        // console.log('id:', id)
         const action = removeFromCart(id)
         dispatch(action)
         
@@ -68,39 +68,13 @@ const Cart = () => {
           <div className={Style.cart}>
               {cartItems && cartItems.map(item => {
                   
-                return  <CartItem
+                return  (<CartItem
                       key={item.id}
                     item={item}
                     handleRemoveFromCart = {handleRemoveFromCart}
                   />
+                )
                   
-                //   return <> <div className={Style.cartItem} key = {item.id}>
-                //       <div className={Style.cartItemImg}>
-                //           <img src={item.image} alt="Cart Item" />
-                //           <div className={Style.qty}>
-                //               {/* <img src="https://m.dominos.co.in/images/delete_icon.svg" alt="Delete" /> */}
-                //               {/* <img src="https://m.dominos.co.in/images/minus.svg" alt="Sub" /> */}
-                //               {item.quantity > 1 ? <img src="https://m.dominos.co.in/images/minus.svg" alt="Sub" /> :<img onClick={() =>handleRemoveFromCart(item.id)} src="https://m.dominos.co.in/images/delete_icon.svg" alt="Delete" /> }
-                //               <p>{ item.quantity}</p>
-                //               <img src="https://m.dominos.co.in/images/plus.svg" alt="Add" />
-                //       </div>
-                //       </div>
-                //       <div className={Style.cartItemInfo}>
-                //           <p>{item.title}</p>
-                //           <p>{item.description}</p>
-                //           <p><span>{item.size} | { item.crust}</span></p>
-                //           <p> ₹ {item.price}</p>
-                //       </div>
-
-                //   </div>
-                      
-                //       <div className={Style.subTotal}>
-                //           <p>Subtotal (Items:{ totalItems})</p>
-                //           <p>₹ {totalPrice}</p>
-                //           <button>Checkout</button>
-                //       </div>
-                      
-                    //   </>
                   
               })
             }
