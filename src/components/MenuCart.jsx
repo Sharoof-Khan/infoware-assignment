@@ -1,6 +1,26 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { addTocart } from '../redux/cart/action'
 import Style from './menuCart.module.css'
-const MenuCart = ({pic,price,title,description,size,crust,category}) => {
+const MenuCart = ({ pic, price, title, description, size, crust, category,id }) => {
+     
+    const dispatch = useDispatch()
+    const handleAddToCart = () => {
+        // console.log('productAtToCart:', id);
+         const item = {
+             id,
+             title,
+             pic,
+             price
+         }
+
+        const action = addTocart(item)
+
+        console.log(action,'addToCart');
+        dispatch(action)
+         
+    }
+   
   return (
       <div className={Style.container}>
           <div className={Style.top}>
@@ -36,7 +56,7 @@ const MenuCart = ({pic,price,title,description,size,crust,category}) => {
               
           </div>
 
-          <button className={Style.addToCart}>ADD TO CART</button>
+          <button className={Style.addToCart} onClick = { handleAddToCart}>ADD TO CART</button>
           
           
     </div>

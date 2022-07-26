@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Style from './navbar.module.css'
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+
+    const cartItems = useSelector(state => state.dominoProduct.cartItems)
+    console.log('cartItemsCountInNavbar:', cartItems.length)
+    const [cartCount, setCartCount] = useState(0)
+    
+    useEffect(() => {
+        let count = 0;
+        cartItems.forEach(item => {
+            count += item.quantity;
+        });
+        setCartCount(count);
+    },[cartCount,cartItems])
+
+
 
     const navigate = useNavigate()
 
@@ -25,7 +40,7 @@ const Navbar = () => {
               {/* <Link to="/cart"> */}
                   <img onClick={handleNavigate} className={Style.cartImg} src="https://i.postimg.cc/q76GQ3mT/cartLogo.png" alt="Cart Logo" />
                   {/* </Link> */}
-              <span>0</span>
+              <span>{ cartCount}</span>
           </div>
           
     </div>

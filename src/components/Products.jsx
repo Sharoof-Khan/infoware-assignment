@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import MenuCart from './MenuCart'
 // import './products.css'
 import Style from './products.module.css'
+import { useSelector,useDispatch } from 'react-redux'
+import { fetchData } from '../redux/cart/action'
 
 
 const Products = () => {
@@ -9,22 +11,36 @@ const Products = () => {
     // const pc = 'https://images.dominos.co.in/new_chicken_sausage.jpg'
     // const category = 'https://m.dominos.co.in/images/non_veg.svg'
 
-    const [data, setData] = useState([])
+    // const [data, setData] = useState([])
+
+    const dispatch = useDispatch()
+    const products = useSelector(state => state.dominoProduct.products)
+    console.log('products:', products)
+    const loading = useSelector(state => state.dominoProduct.loading)
     
+
     useEffect(() => {
-        // fetch('http://localhost:4000/products')
-        fetch('https://infoware-assignment.herokuapp.com/products')
-            .then(res => res.json())
-            .then(data => setData(data))
-    }, [])
+        if (products.length === 0) { 
 
-    if (data.length === 0) { 
-        return <h1>Loading...</h1>
+            dispatch(fetchData())
+        }
+    }, [dispatch, products?.length])
+
+
+    console.log('products:', products);
+
+    // const handleAddToCart = (product) => {
+    //     console.log('productAtToCart:', product);
+    // }
+   
+
+    if (loading) {
+        return <center><h1>Loading....</h1> </center>
     }
-
-  return (
-      <div className={Style.container}>
-          {/* <MenuCart
+        
+        return (
+            <div className={Style.container}>
+                {/* <MenuCart
               pic={pc}
               price={500}
               title={'Chicken Sausage'}
@@ -34,22 +50,26 @@ const Products = () => {
               category={category}
           /> */}
 
-          {data && data.map(item => {
-                return <MenuCart
-                    pic={item.image}
-                    price={item.price}
-                    title={item.title}
-                    description={item.description}
-                    size={item.size}
-                    crust={item.crust}
-                    category={item.categories}
-                />
+                {products && products.map(item => {
+                    return <MenuCart
+                        key={item.id}
+                        id={item.id}
+                        pic={item.image}
+                        price={item.price}
+                        title={item.title}
+                        description={item.description}
+                        size={item.size}
+                        crust={item.crust}
+                        category={item.categories}
+                        // addToCart = {handleAddToCart}
+                    />
             
-           })}
+                })}
 
           
-    </div>
-  )
+            </div>
+        )
+    
 }
 
 export default Products
