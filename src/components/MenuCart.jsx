@@ -2,25 +2,35 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addTocart } from '../redux/cart/action'
 import Style from './menuCart.module.css'
-const MenuCart = ({ pic, price, title, description, size, crust, category,id }) => {
+const MenuCart = ({ pic, price, title, description, size, crust, category,id,item }) => {
      
     const dispatch = useDispatch()
     const handleAddToCart = () => {
         // console.log('productAtToCart:', id);
+        // console.log('Clicked to cart');
          const item = {
              id,
              title,
              pic,
-             price
+             price,
+             description,
+             size,
+             crust,
+                
+            
          }
 
         const action = addTocart(item)
 
-        // console.log(action,'addToCart');
         dispatch(action)
+        // console.log(action,'addToCart');
          
     }
    
+    // console.log();
+    //  const btn =     <button className={Style.addToCart} onClick = { ()=> handleAddToCart}>ADD TO CART</button>
+    //  console.log('btn:', btn)
+
   return (
       <div className={Style.container}>
           <div className={Style.top}>
@@ -36,7 +46,7 @@ const MenuCart = ({ pic, price, title, description, size, crust, category,id }) 
           <div className={Style.bottom}>
               <div className={Style.bottomLeft}>
                   <p>Size</p>
-                  <p>Medium</p>
+                  <p>{ size}</p>
                   <img src="https://i.postimg.cc/htzDkg58/down-arrow.png" alt="down" />
                   {/* <hr /> */}
                   <hr className={Style.hrLeft} />
@@ -55,8 +65,8 @@ const MenuCart = ({ pic, price, title, description, size, crust, category,id }) 
               {/* <button >ADD TO CART</button> */}
               
           </div>
+          <button className={Style.addToCart} onClick = { (item)=> handleAddToCart(item)}>ADD TO CART</button>
 
-          <button className={Style.addToCart} onClick = { ()=> handleAddToCart()}>ADD TO CART</button>
           
           
     </div>

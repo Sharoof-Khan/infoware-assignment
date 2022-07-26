@@ -122,24 +122,10 @@ min-height: 25vh;
 }
 
 
-/* .bottom>button{
-    position: relative;
-    height: 30px;
-    top: 100px;
-    background-color: transparent;
-    border:1px solid green;
-    color: green;
-    font-weight: 700;
-    border-radius: 5px;
-}
 
-.bottom>button:hover{
-    background-color: green;
-    color: white;
-} */
 
 .addToCart{
-    /* margin-right: 20px; */
+    margin-right: 20px;
     margin-top: 10px;
     margin-left: 15vw;
     height: 30px;
@@ -149,20 +135,19 @@ min-height: 25vh;
     font-weight: 700;
     border-radius: 5px;
     margin-bottom: 10px;
-    cursor: pointer;
+    cursor: pointer; 
+    /* background-color: red; */
 }
 .addToCart:hover{
-    background-color: green ;
+    background-color: red;
     color: white;
-    cursor: pointer;
-    /* z-index: 2; */
+   
 }
 
 
 @media screen and (max-width:600px){
     .addToCart{
         width: 90%;
-        /* margin-left: 20px; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -176,3 +161,4 @@ min-height: 25vh;
     }
     
 }
+

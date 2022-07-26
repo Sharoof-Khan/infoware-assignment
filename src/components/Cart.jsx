@@ -39,6 +39,8 @@ const Cart = () => {
         // return <h1>Loading...</h1>
         return (
             <div className={Style.cartContainer}>
+          <h1>Cart</h1>
+
                 <div className={Style.cart}>
                     <div className={Style.emptyCart}>
 

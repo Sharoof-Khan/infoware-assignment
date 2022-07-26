@@ -33,6 +33,7 @@ const Products = () => {
    
                 {products && products.map(item => {
                     return <MenuCart
+                        item={item}
                         key={item.id}
                         id={item.id}
                         pic={item.image}
