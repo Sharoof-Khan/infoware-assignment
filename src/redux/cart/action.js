@@ -72,3 +72,11 @@ export const changeQuantity = (itemId, value) => {
         }
     }
 }
+
+
+export const checkoutRequest = () => { 
+    return {
+        type: actionTypes.CHECKOUT_REQUEST,
+        
+    }
+}

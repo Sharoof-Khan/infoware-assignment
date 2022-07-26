@@ -139,7 +139,7 @@ min-height: 25vh;
     /* background-color: red; */
 }
 .addToCart:hover{
-    background-color: red;
+    background-color: green;
     color: white;
    
 }

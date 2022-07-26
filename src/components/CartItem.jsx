@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import Style from './cart.module.css'
-import {changeQuantity} from "../redux/cart/action"
+import {changeQuantity, checkoutRequest} from "../redux/cart/action"
 
 const CartItem = ({ item,handleRemoveFromCart }) => {
     const [totalPrice, setTotalPrice] = useState(0);
@@ -47,7 +47,16 @@ const handleAddQty = () => {
 
     useEffect(() => {
         dispatch(changeQuantity(item.id, addQty))
-    },[addQty,setAddQty,dispatch,item.id])
+    }, [addQty, setAddQty, dispatch, item.id])
+    
+
+    const handleCheckout = (e) => {
+        e.preventDefault();
+
+        alert('Checkout Successful Your Order will be delivered in 30 minutes')
+        dispatch(checkoutRequest(cartItems))
+        // checkoutRequest()
+    }
 
 
   return (
@@ -74,7 +83,7 @@ const handleAddQty = () => {
                       <div className={Style.subTotal}>
                           <p>Subtotal (Items:{ totalItems})</p>
                           <p>₹ {totalPrice}</p>
-                          <button>Checkout</button>
+                          <button onClick={handleCheckout}>Checkout</button>
                       </div>
                       
           
