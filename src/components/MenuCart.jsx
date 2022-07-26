@@ -56,7 +56,7 @@ const MenuCart = ({ pic, price, title, description, size, crust, category,id }) 
               
           </div>
 
-          <button className={Style.addToCart} onClick = { handleAddToCart}>ADD TO CART</button>
+          <button className={Style.addToCart} onClick = { ()=> handleAddToCart()}>ADD TO CART</button>
           
           
     </div>

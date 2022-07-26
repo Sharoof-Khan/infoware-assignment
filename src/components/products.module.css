@@ -15,12 +15,11 @@
 
 @media screen and (max-width: 600px) {
     .container{
+        width: 90%;
         flex-direction: column;
-        margin: auto;
+        /* margin: auto; */
     }
 
-    .container>div{
-        margin-left: 2%;
-    }
+    
 }
     

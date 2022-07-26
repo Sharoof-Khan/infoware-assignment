@@ -161,6 +161,7 @@ font-size: 14px;
 .qty>img{
     border: 1px solid gray;
     padding: 4px;
+    cursor: pointer;
 }
 .qty>p{
     padding: 3px;
